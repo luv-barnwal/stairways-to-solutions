@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_page">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="405dp"
+        android:layout_height="720dp"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="147dp"
+                android:layout_height="134dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#FFFFFF"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="332dp"
+                android:layout_height="218dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginBottom="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/connections"
+                    android:layout_width="134dp"
+                    android:layout_height="58dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginBottom="86dp"
+                    android:background="@drawable/rounded_corners"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="99dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Connections"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="336dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                <ImageView
+                    android:id="@+id/questions"
+                    android:layout_width="150dp"
+                    android:layout_height="53dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="37dp"
+                    android:background="@drawable/round_button"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginEnd="230dp"
+                    android:text="Questions"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:layout_marginEnd="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout1">
+
+                <ImageView
+                    android:id="@+id/leaderboard"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:rotation="45"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/name_calling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Leaderboard"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_calling"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/leaderboard" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout4"
+                android:layout_width="275dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintEnd_toStartOf="@+id/layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout3">
+
+                <ImageView
+                    android:id="@+id/store"
+                    android:layout_width="120dp"
+                    android:layout_height="71dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="85dp"
+                    android:background="@drawable/triangle"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="295dp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="200dp"
+                    android:text="Store"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.464"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="329dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout5"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout4">
+
+                <ImageView
+                    android:id="@+id/knowUs"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_corners" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Know Us"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout6"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout">
+
+                <ImageView
+                    android:id="@+id/rewards"
+                    android:layout_width="97dp"
+                    android:layout_height="49dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="45dp"
+                    android:background="@drawable/round_corners"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Rewards"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout7"
+                android:layout_width="205dp"
+                android:layout_height="77dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="23dp"
+                app:layout_constraintBottom_toTopOf="@+id/adView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout5">
+
+                <ImageView
+                    android:id="@+id/competitions"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="149dp"
+                    android:layout_marginEnd="138dp"
+                    android:background="@drawable/left_half_circle"
+                    android:text="Competitions"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="487dp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:text="Competitions"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="501dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="90dp"
+                android:text="Points: "
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@id/points"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-6342970355059072/3019941353"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout7" />
+
+            <RelativeLayout
+                android:id="@+id/layout8"
+                android:layout_width="260dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layout7"
+                app:layout_constraintTop_toBottomOf="@+id/layout6">
+
+                <ImageView
+                    android:id="@+id/winners"
+                    android:layout_width="260dp"
+                    android:layout_height="90dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="85dp"
+                    android:background="@drawable/triangle"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="295dp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Winners"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

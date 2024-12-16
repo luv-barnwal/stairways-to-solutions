@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/logout"
+        android:id="@+id/time"
+        android:title="Me"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/ask_navigation"
+        android:title="Ask a Question"
+        android:icon="@drawable/ask_question"/>
+
+    <item
+        android:id="@+id/navigation_quit"
+        android:title="Quit"
+        android:icon="@drawable/logout"/>
+
+</menu>

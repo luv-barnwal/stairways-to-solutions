@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luv.s2s">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <activity android:name=".WinnersActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6342970355059072~7900466044" />
+
+        <activity android:name=".WatchAdActivity" />
+        <activity android:name=".AnswerActivity" />
+        <activity android:name=".AnswerQuestionActivity" />
+        <activity android:name=".ViewAnswersActivity" />
+        <activity android:name=".ViewQuestionActivity" />
+        <activity android:name=".AskQuestionActivity" />
+        <activity android:name=".TradeActivity" />
+        <activity android:name=".QuestionsActivity" />
+        <activity android:name=".StoreActivity" />
+        <activity android:name=".RewardsActivity" />
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".NotificationsActivity" />
+        <activity android:name=".CompetitionsActivity" />
+        <activity android:name=".LeaderboardActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".ChatListActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".KnowUsActivity" />
+        <activity android:name=".SignUpDetailsActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".DashBoardActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

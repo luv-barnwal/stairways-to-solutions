@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "654771270793",
+    "firebase_url": "https://stairways-to-solutions-default-rtdb.firebaseio.com",
+    "project_id": "stairways-to-solutions",
+    "storage_bucket": "stairways-to-solutions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654771270793:android:c42ded596886426aafc258",
+        "android_client_info": {
+          "package_name": "com.luv.s2s"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654771270793-icgl2anfk8qcdn5e2mkb9rme10env581.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.luv.s2s",
+            "certificate_hash": "4f76f302d10d03445927aa8a23add46821755e8e"
+          }
+        },
+        {
+          "client_id": "654771270793-oog4bhabus1933avk4j8t9taq8mj7n23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcJA32j_GN9_QlPRmSf7L2GQobnGwTRrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654771270793-oog4bhabus1933avk4j8t9taq8mj7n23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
